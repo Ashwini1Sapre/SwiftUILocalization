@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  SwiftUILocalization
+
+  Created by Knoxpo MacBook Pro on 16/04/21.
+  
+*/
+"CFBundleDisplayName" = "panne de voiture";
+"CFBundleName" =  "panne de voiture";
+
+ 

@@ -11,7 +11,29 @@ import SwiftUI
 struct SwiftUILocalizationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            
+            TabView {
+                ContentView()
+                   
+                    .environment(\.locale, .init(identifier: "en"))
+                    .tabItem { Label("English", systemImage:"pause") }
+                
+                ContentView()
+                   
+                    .environment(\.locale, .init(identifier: "fr"))
+                    .tabItem { Label("French", systemImage:"play") }
+                
+                ContentView()
+                   
+                    .environment(\.locale, .init(identifier: "zh-Hans"))
+                    .tabItem { Label("Japanese", systemImage:"stop") }
+                
+            }
+           
+            
+            
+            
         }
     }
 }
